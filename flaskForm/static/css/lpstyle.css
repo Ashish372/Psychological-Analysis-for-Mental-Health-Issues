@@ -1,0 +1,17 @@
+.bg {
+  background-image: url("../pic/Scr.png");
+}
+
+.test-link {
+  color: #2da1c1;
+  font-size: large;
+  text-decoration: none;
+  left: 252px;
+  float: right;
+}
+
+.navbar {
+  color: blueviolet;
+}
+
+/* login page */

@@ -1,0 +1,3458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <script src="../static/script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <div class="fluid-container">
+        <form class="needs-validation" action="my_form_post"  method="post">
+          <!-- <div class="alert alert-info" role="alert">
+            Please Input Valid details and then proceed with the test.
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                placeholder="First name"
+                required
+              />
+              <div class="invalid-feedback">Enter your First Name</div>
+              <div class="valid-feedback">Looks Good!</div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom02"
+                name="validationCustom02"
+                placeholder="Last name"
+                required
+              />
+              <div class="invalid-feedback">Enter your Last Name</div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                name="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+              <div class="invalid-feedback">Enter correct Email</div>
+            </div>
+          </div> -->
+<!-- 
+          <div class="form-row needs-validation radio">
+            <div class="custom-control custom-radio">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="customControlValidation2"
+                name="radio-stacked"
+                required
+              />
+              <label class="custom-control-label" for="customControlValidation2"
+                >Select this if you are a Student</label
+              >
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="customControlValidation3"
+                name="radio-stacked"
+                required
+              />
+              <label class="custom-control-label" for="customControlValidation3"
+                >Select this if you are a working Professional</label
+              >
+              <div class="invalid-feedback">invalid feedback text</div>
+            </div>
+          </div> -->
+          <hr class="line-break" />
+
+          <div class="alert alert-info alert-css" role="alert">
+              <b>Steps:</b>
+            <br>
+            1. Select the valid Option (Student or Working Professional)
+            <br>
+            2. Fill in your credentials
+            <br>
+            3. For the questionnaire make sure you support your yes with an one liner about the situation and kindly be very concise and clear.
+            <br>
+            4. Next part of the test is to write a paragraph of minimum 200 words.
+            <br>
+          5. To conclude with the test make certain of answering all the questions that are a part of the T-Test.
+          </div>
+
+          <div class="test">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button
+                onclick="showStudentForm()"
+                type="button"
+                class="btn btn-dark btn-lg test-button"
+              >
+                Student
+              </button>
+              <button
+                onclick="showWorkingForm()"
+                type="button"
+                class="btn btn-dark btn-lg test-button"
+              >
+                Working Professional
+              </button>
+            </div>
+          </div>
+
+          <div id="student-ques" class="ques">
+
+            <div class="alert alert-info" role="alert">
+                Please Input Valid details and then proceed with the test.
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">First name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    name="validationCustom01"
+                    placeholder="First name"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter your First Name</div>
+                  <div class="valid-feedback">Looks Good!</div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    name="validationCustom02"
+                    placeholder="Last name"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter your Last Name</div>
+                </div>
+    
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    name="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter correct Email</div>
+                </div>
+              </div>
+
+              
+<!--          <div class="form-row needs-validation radio">-->
+<!--            <div class="custom-control custom-radio">-->
+<!--              <input-->
+<!--                type="radio"-->
+<!--                class="custom-control-input"-->
+<!--                id="customControlValidation2"-->
+<!--                name="radio-stacked"-->
+<!--                value= 'Student'-->
+<!--                required-->
+<!--              />-->
+<!--              <label class="custom-control-label" for="customControlValidation2"-->
+<!--                >Select this if you are a Student</label-->
+<!--              >-->
+<!--            </div>-->
+<!--            <div class="custom-control custom-radio mb-3">-->
+<!--              <input-->
+<!--                type="radio"-->
+<!--                class="custom-control-input"-->
+<!--                id="customControlValidation3"-->
+<!--                name="radio-stacked"-->
+<!--                value= 'Working'-->
+<!--                required-->
+<!--              />-->
+<!--              <label class="custom-control-label" for="customControlValidation3"-->
+<!--                >Select this if you are a working Professional</label-->
+<!--              >-->
+<!--              <div class="invalid-feedback">invalid feedback text</div>-->
+<!--            </div>-->
+<!--          </div>-->
+            <br>
+            
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have you experienced a week or longer of lower-than-usual interest in activities that you usually enjoy? Examples might include work, exercise, or hobbies. If yes, write down what you think has caused it.</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios9"
+                      id="gridRadios1"
+                      value="lackOfInterest"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios9"
+                      id="gridRadios2"
+                      value="noLackOfInterest"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="hobby"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label ">Do feelings of anxiety or discomfort around others bother you? If yes, please describe it.</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios10"
+                      id="gridRadios1"
+                      value="socialAnxiety"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios10"
+                      id="gridRadios2"
+                      value="noSocialAnxiety"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="anxiousness"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have your eating habits changed in any way? If yes, Why has it changed?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios11"
+                      id="gridRadios1"
+                      value="noAppetite"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios11"
+                      id="gridRadios2"
+                      value="good-appetite"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="eating-habit"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Is any of your loved ones ill? If yes, who and how is it affecting you?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios12"
+                      id="gridRadios1"
+                      value="illness"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios12"
+                      id="gridRadios2"
+                      value="noIllness"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+no                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="familySickness"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Over the last 12 months, have you felt so worried about something that you were unable to sleep at night? Mention the reason</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios13"
+                      id="gridRadios1"
+                      value="worry"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios13"
+                      id="gridRadios2"
+                      value="noWorry"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="worry-reason"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have you ever experienced a terrible occurrence that has impacted you significantly? Examples may include being the victim of armed assault, witnessing a tragedy happen to someone else, surviving a sexual assault, or living through a natural disaster. Please Mention</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios14"
+                      id="gridRadios1"
+                      value="trauma"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios14"
+                      id="gridRadios2"
+                      value="noTrauma"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                    no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="trauma"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Over the last 12 months, how frequently have you felt so worried about something that you were unable to sleep at night?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios9"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios9"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q1"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Over the last 12 months, how frequently have you felt alone or lonely?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios10"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios10"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q2"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Does bullying happen in your school/college? Have you seen anyone being bullied?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios11"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios11"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q3"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Do students around you scoring better than you affect your self esteem ?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios12"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios12"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q4"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">How many close friends would you say you have?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios13"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios13"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q5"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">How much confidence do you have that you can successfully take part in class discussions ?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios14"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios14"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q6"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <!-- </div> -->
+
+            <div class="generate-image">
+              <h4>Click the button to generate images:</h4>
+              <!-- call user-defined getRandomImage function to generate image -->
+              <button
+                class="btn btn-dark"
+                onclick="getRandomImage(),myFunction1()"
+                type="button"
+                id="myBtn1"
+              >
+                Generate Image
+              </button>
+              <script>
+function myFunction1() {
+  document.getElementById("myBtn1").disabled = true;
+}
+              </script>
+              <br />
+              <br />
+              <!-- <label>&nbsp;<span id="result"></span>>Test</span></label> -->
+              <span id="result1"> </span>
+              <br />
+            </div>
+
+            <br />
+            <label for="work-life"
+              >How do you relate with these images in your Work
+              Environment?</label
+            >
+            <textarea
+              id="story"
+              name="story"
+              rows="20"
+              cols="135"
+              minlength="5"
+            >
+            </textarea>
+            <!-- t-test -->
+            <hr>
+            <p>  </p>
+            <div>
+              q1
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I do not feel sad.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2"> I feel sad </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I am sad all the time and I can't snap out of it.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I am so sad and unhappy that I can't stand it
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q2
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I am not particularly discouraged about the future.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel discouraged about the future.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I feel I have nothing to look forward to
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I feel the future is hopeless and that things cannot improve
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q3
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I do not feel like a failure.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel I have failed more than the average person.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      As I look back on my life, all I can see is a lot of failures.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I feel I am a complete failure as a person.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q4
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I get as much satisfaction out of things as I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I don't enjoy things the way I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I don't get real satisfaction out of anything anymore
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I am dissatisfied or bored with everything.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q5
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel particularly guilty
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel guilty a good part of the time.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I feel quite guilty most of the time
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I feel guilty all of the time.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q6
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishment"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel I am being punished.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishmnet"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel I may be punished
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishment"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I expect to be punished.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishment"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I feel I am being punished.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q7
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel disappointed in myself.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am disappointed in myself.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I am disgusted with myself.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I hate myself.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q8
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel I am any worse than anybody else.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am critical of myself for my weaknesses or mistakes.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I blame myself all the time for my faults.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I blame myself for everything bad that happens.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q9
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't have any thoughts of killing myself
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have thoughts of killing myself, but I would not carry them out.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I would like to kill myself
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I would kill myself if I had the chance.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q10
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't cry any more than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I cry more now than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I cry all the time now.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I used to be able to cry, but now I can't cry even though I want to
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q11
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I am no more irritated by things than I ever was.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am slightly more irritated now than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I am quite annoyed or irritated a good deal of the time.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I feel irritated all the time.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q12
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I have not lost interest in other people.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am less interested in other people than I used to be.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I have lost most of my interest in other people.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I have lost all of my interest in other people.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q13
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I make decisions about as well as I ever could
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I put off making decisions more than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I have greater difficulty in making decisions more than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I can't make decisions at all anymore.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q14
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel that I look any worse than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am worried that I am looking old or unattractive.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I feel there are permanent changes in my appearance that make me look
+                      unattractive
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I believe that I look ugly.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q15
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I can work about as well as before
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      It takes an extra effort to get started at doing something.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I have to push myself very hard to do anything.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I can't do any work at all.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q16
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I can sleep as well as usual
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I don't sleep as well as I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I wake up 1-2 hours earlier than usual and find it hard to get back to
+                      sleep.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I wake up several hours earlier than I used to and cannot get back to
+                      sleep.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q17
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't get more tired than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I get tired more easily than I used to
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I get tired from doing almost anything.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I am too tired to do anything.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q18
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      My appetite is no worse than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      My appetite is not as good as it used to be.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      My appetite is much worse now.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I have no appetite at all anymore.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q19
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I haven't lost much weight, if any, lately.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have lost more than five pounds.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I have lost more than ten pounds.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I have lost more than fifteen pounds.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q20
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I am no more worried about my health than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am worried about physical problems like aches, pains, upset stomach,
+                      or constipation.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      I am very worried about physical problems and it's hard to think of
+                      much else.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios4">
+                      I am so worried about my physical problems that I cannot think of
+                      anything else.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            
+
+            <button class="btn btn-primary submit btn-lg" type="submit" name="action" value="Submit" >
+              Submit form
+            </button>
+          </div>
+        </form>
+<!--        second form-->
+        <form class="needs-validation" action="my_form_post"  method="post">
+          <div id="working-ques" class="ques">
+
+            <div class="alert alert-info" role="alert">
+                Please Input Valid details and then proceed with the test.
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">First name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    name="validationCustom01"
+                    placeholder="First name"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter your First Name</div>
+                  <div class="valid-feedback">Looks Good!</div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    name="validationCustom02"
+                    placeholder="Last name"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter your Last Name</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    name="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter correct Email</div>
+                </div>
+              </div>
+
+
+<!--          <div class="form-row needs-validation radio">-->
+<!--            <div class="custom-control custom-radio">-->
+<!--              <input-->
+<!--                type="radio"-->
+<!--                class="custom-control-input"-->
+<!--                id="customControlValidation2"-->
+<!--                name="radio-stacked"-->
+<!--                value= 'Student'-->
+<!--                required-->
+<!--              />-->
+<!--              <label class="custom-control-label" for="customControlValidation2"-->
+<!--                >Select this if you are a Student</label-->
+<!--              >-->
+<!--            </div>-->
+<!--            <div class="custom-control custom-radio mb-3">-->
+<!--              <input-->
+<!--                type="radio"-->
+<!--                class="custom-control-input"-->
+<!--                id="customControlValidation3"-->
+<!--                name="radio-stacked"-->
+<!--                value= 'Working'-->
+<!--                required-->
+<!--              />-->
+<!--              <label class="custom-control-label" for="customControlValidation3"-->
+<!--                >Select this if you are a working Professional</label-->
+<!--              >-->
+<!--              <div class="invalid-feedback">invalid feedback text</div>-->
+<!--            </div>-->
+<!--          </div>-->
+            <br>
+
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have you experienced a week or longer of lower-than-usual interest in activities that you usually enjoy? Examples might include work, exercise, or hobbies. If yes, write down what you think has caused it.</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios9"
+                      id="gridRadios1"
+                      value="lackOfInterest"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios9"
+                      id="gridRadios2"
+                      value="noLackOfInterest"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="hobby"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label ">Do feelings of anxiety or discomfort around others bother you? If yes, please describe it.</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios10"
+                      id="gridRadios1"
+                      value="socialAnxiety"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios10"
+                      id="gridRadios2"
+                      value="noSocialAnxiety"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="anxiousness"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have your eating habits changed in any way? If yes, Why has it changed?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios11"
+                      id="gridRadios1"
+                      value="noAppetite"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios11"
+                      id="gridRadios2"
+                      value="good-appetite"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      Second radio
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="eating-habit"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Is any of your loved ones ill? If yes, who and how is it affecting you?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios12"
+                      id="gridRadios1"
+                      value="illness"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios12"
+                      id="gridRadios2"
+                      value="noIllness"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+no                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="familySickness"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Over the last 12 months, have you felt so worried about something that you were unable to sleep at night? Mention the reason</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios13"
+                      id="gridRadios1"
+                      value="worry"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios13"
+                      id="gridRadios2"
+                      value="noWorry"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="worry-reason"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have you ever experienced a terrible occurrence that has impacted you significantly? Examples may include being the victim of armed assault, witnessing a tragedy happen to someone else, surviving a sexual assault, or living through a natural disaster. Please Mention</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios14"
+                      id="gridRadios1"
+                      value="trauma"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios14"
+                      id="gridRadios2"
+                      value="noTrauma"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                    no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="trauma"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have you ever had a period where you felt down? Not just for a week or two but for many weeks or, perhaps, months?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios15"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios15"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q1"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Did you find you had no energy, had no interest in things, and overall had great difficulty functioning?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios16"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios16"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q2"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Have you been experiencing significant mood swings, crying, or thoughts of suicide? If yes then please elaborate on what makes you feel that way</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios17"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios17"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q3"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Can you tell us the last time you left work feeling upset?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios18"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios18"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q4"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Do you ever worry about the security of your job and if yes then how often?</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios19"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios19"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q5"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="form-group">
+              <div>
+                <legend class="col-form-label">Are you overly fatigued or tired at the end of the day?  If yes, then what can be the reason for it.</legend>
+                <div onclick="showTextBox(event)" class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios20"
+                      id="gridRadios1"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios20"
+                      id="gridRadios2"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      no
+                    </label>
+                  </div>
+                  <textarea
+                    class="text-box"
+                    name="q6"
+                    id=""
+                    cols="120"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <!-- </div> -->
+
+            <div class="generate-image">
+              <h4>Click the button to generate images:</h4>
+              <!-- call user-defined getRandomImage function to generate image -->
+              <button
+                class="btn btn-dark"
+                onclick="getRandomImage2(), myFunction()"
+                type="button"
+                id="myBtn"
+              >
+                Generate Image
+              </button>
+              <script>
+function myFunction() {
+  document.getElementById("myBtn").disabled = true;
+}
+</script>
+              <br />
+              <br />
+              <!-- <label>&nbsp;<span id="result"></span>>Test</span></label> -->
+              <span id="result"> </span>
+              <br />
+            </div>
+
+            <br />
+            <label for="work-life"
+              >How do you relate with these images in your Work
+              Environment?</label
+            >
+            <textarea
+              id="story"
+              name="story"
+              rows="20"
+              cols="135"
+              minlength="5"
+            >
+            </textarea>
+            <!-- t-test -->
+             <hr>
+            <p>  </p>
+            <div>
+              q1
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I do not feel sad.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2"> I feel sad </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am sad all the time and I can't snap out of it.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sad"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am so sad and unhappy that I can't stand it
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q2
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I am not particularly discouraged about the future.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel discouraged about the future.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel I have nothing to look forward to
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="future"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel the future is hopeless and that things cannot improve
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q3
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I do not feel like a failure.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel I have failed more than the average person.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      As I look back on my life, all I can see is a lot of failures.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="failure"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel I am a complete failure as a person.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q4
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I get as much satisfaction out of things as I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I don't enjoy things the way I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I don't get real satisfaction out of anything anymore
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="enjoythings"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am dissatisfied or bored with everything.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q5
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel particularly guilty
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel guilty a good part of the time.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel quite guilty most of the time
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="guilt"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel guilty all of the time.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q6
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishment"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel I am being punished.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishment"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel I may be punished
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishment"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I expect to be punished.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="punishment"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel I am being punished.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q7
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel disappointed in myself.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am disappointed in myself.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am disgusted with myself.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfloathing"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I hate myself.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q8
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel I am any worse than anybody else.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am critical of myself for my weaknesses or mistakes.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I blame myself all the time for my faults.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="selfblame"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I blame myself for everything bad that happens.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q9
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't have any thoughts of killing myself
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have thoughts of killing myself, but I would not carry them out.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I would like to kill myself
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suicide"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I would kill myself if I had the chance.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q10
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't cry any more than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I cry more now than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I cry all the time now.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="grieve"
+                      id="gridRadios2"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I used to be able to cry, but now I can't cry even though I want to
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q11
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I am no more irritated by things than I ever was.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am slightly more irritated now than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am quite annoyed or irritated a good deal of the time.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="irritation"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel irritated all the time.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q12
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I have not lost interest in other people.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am less interested in other people than I used to be.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have lost most of my interest in other people.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="socialize"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have lost all of my interest in other people.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q13
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I make decisions about as well as I ever could
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I put off making decisions more than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have greater difficulty in making decisions more than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="decisions"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I can't make decisions at all anymore.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q14
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't feel that I look any worse than I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am worried that I am looking old or unattractive.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I feel there are permanent changes in my appearance that make me look
+                      unattractive
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appearance"
+                      id="gridRadios2"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I believe that I look ugly.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q15
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I can work about as well as before
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      It takes an extra effort to get started at doing something.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have to push myself very hard to do anything.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="work"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I can't do any work at all.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q16
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I can sleep as well as usual
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I don't sleep as well as I used to.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I wake up 1-2 hours earlier than usual and find it hard to get back to
+                      sleep.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sleep"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I wake up several hours earlier than I used to and cannot get back to
+                      sleep.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q17
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I don't get more tired than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I get tired more easily than I used to
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I get tired from doing almost anything.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tiredness"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am too tired to do anything.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q18
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      My appetite is no worse than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      My appetite is not as good as it used to be.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      My appetite is much worse now.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="appetite"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have no appetite at all anymore.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q19
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I haven't lost much weight, if any, lately.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have lost more than five pounds.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have lost more than ten pounds.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="weight"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I have lost more than fifteen pounds.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              q20
+              <fieldset class="form-group">
+                <div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios1"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      I am no more worried about my health than usual.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios2"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am worried about physical problems like aches, pains, upset stomach,
+                      or constipation.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios3"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am very worried about physical problems and it's hard to think of
+                      much else.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="health"
+                      id="gridRadios4"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      I am so worried about my physical problems that I cannot think of
+                      anything else.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+
+            <button class="btn btn-primary submit btn-lg" type="submit" name="action" value="Submit1" >
+              Submit form
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+.fluid-container{
+    background-color: #F3F0D7;
+    height: 100%;
+    padding-top: 3%;
+}
+
+/* .alert-css{
+    width:70%;
+} */
+
+.alert{
+        margin: auto; display: table;
+        width: 100%;
+        margin-bottom: 2%;
+        background-color: #CEE5D0;
+}
+
+.needs-validation{
+    margin: auto; display: table;
+        width: 70%;
+        margin-top: 2%;
+}
+
+.custom-control{
+    padding-top: 2%;
+}
+
+.radio{
+    margin-left: 0px;
+}
+
+.submit{
+    margin-top: 1%;
+    background-color: #90AACB;
+}
+
+/* test */
+.line-break{
+    color: #000;
+}
+
+.test-button{
+    background-color: #ECAC5D;
+}
+
+.btn-group{
+    width: 100%;
+    padding-top: 2%;
+}
+
+.ques{
+    padding: 1%;
+    margin-top: 2%;
+    background-color: #DBD0C0;
+    border-radius: 0.5%;
+}
+
+
+.generate-image{
+    padding-top: 3%;
+}
+
+#student-ques{
+    display: none;
+}
+
+#working-ques{
+    display: none;
+}
+
+.text-box{
+    display: none;
+}

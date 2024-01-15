@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+	<title>Report</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="../static/css/resume.css" media="all" />
+
+</head>
+<body>
+
+<div id="doc2" class="yui-t7">
+	<div id="inner">
+	
+		<div id="hd">
+			<div class="yui-gc">
+				<div class="yui-u first">
+					<h1>Report</h1>
+					<h2>Mental health Analysis</h2>
+				</div>
+
+				<div class="yui-u">
+					<div class="contact-info">
+						<h3><a id="pdf" href="#">Download PDF</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Profile</h2>
+						</div>
+						<div class="yui-u">
+							<p class="enlarge">
+								First Name:    {{fname}}  <br>
+								Last Name:  {{lname}} <br>
+								Email: {{mail}} <br>
+								Profession: {{prof}}  <br>
+							</p>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Test Details</h2>
+						</div>
+						<div class="yui-u">
+                            <p class="enlarge">
+                                No. of participants: 1
+                            <br> <br>
+                           <b>Test included:</b> 
+                            <br>
+                            1. Questionairre revolving around stress, anxiety, eat-disorder 
+                            <br>
+                            2. Describing their professional life 
+                            <br>
+                            3. Beck's Analysis
+                            </p>
+
+						</div>
+					</div>
+                    <div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Methods Implemented</h2>
+						</div>
+						<div class="yui-u">
+							<p class="enlarge">
+                                 1. Sentiment Analysis of the persons mental health
+                                 <br>
+                                 2. Extractive Summarization
+                                 <br>
+                                 3. Word Cloud
+							</p>
+						</div>
+					</div>
+
+					
+					</div>
+
+					<div class="yui-gf">
+	
+						<div class="yui-u first">
+							<h2>Problem Summary</h2>
+						</div>
+
+						<div class="yui-u">
+
+							<div class="job">
+								
+								<ul>
+									<li>{{reason}}	</li>
+									<li>{{fam}}</li>
+									<li>{{eat}}	</li>
+									<li>{{anx}}	</li>
+									<li>{{hob}}	</li>
+									<li>{{tra}}	</li>
+									<li>{{fam}}	</li>
+									<li>{{sed}}	</li>
+									<li>{{a1}}	</li>
+									<li>{{a2}}	</li>
+									<li>{{a3}}	</li>
+									<li>{{a4}}	</li>
+									<li>{{a5}}	</li>
+									<li>{{a6}}	</li>
+								</ul>
+							</div>
+
+							<div class="job">
+								<h2>Sumarized Text:</h2>
+								<p>{{smry}}</p>
+
+							</div>
+
+
+							<div class="job last">
+								<h2>Word Cloud:</h2>
+								<img src="static/WCresult2.png" width='600' height='500'>
+							</div>
+
+						</div>
+					</div>
+							<div class="job last 1">
+								<h2>Beck's Analysis:</h2>
+								<img src="static/test2.png" width='600' height='500'>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Result</h2>
+						</div>
+					<b> <h2 style="color: orange;">{{senti}}</h2></b>	
+					</div><
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+</body>
+</html>
+
